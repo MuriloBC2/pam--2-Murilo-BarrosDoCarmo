@@ -14,7 +14,7 @@ import {
   Info,
   Formulario,
   Input,
-  ForgotPassword,
+  Buttom,
   Imgs, 
 } from "./style.js";
 
@@ -31,7 +31,7 @@ const Login = () => {
         ></Input>
         <Input placeholder="Email: " placeholderTextColor={"#B5B5B5"}></Input>
         <Input placeholder="Senha: " placeholderTextColor={"#B5B5B5"}></Input>
-        <ForgotPassword title="Fazer Login"></ForgotPassword>
+        <Buttom title="Fazer Login"></Buttom>
       </Formulario>
     </Body>
   );

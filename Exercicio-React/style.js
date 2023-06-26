@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, TextInput, Text, View, ScrollView, Pressable } from "react-native";
+import { Button, TextInput, Text, View, ScrollView, Image } from "react-native";
 import { styled } from "styled-components";
 
 export const Body = styled(ScrollView)`
@@ -41,12 +41,25 @@ export const Input = styled(TextInput)`
   margin-bottom: 10px;
 `;
 
-export const ForgotPassword = styled(Button) `
+export const Buttom = styled(Button)`
    margin-top: 10px;
    align-item: center 
-    
-
-
+    width: 150px;
+    height: 60px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+`;
+export const Imgs = styled(Image)`
+    margin-top: 15px;
+    width: 140px;
+    height: 100px
 `
+   
 
 
