@@ -1,54 +1,35 @@
-import React from "react";
-import { View, Button, Image, Input, Icon, Stack, Pressable, Center, NativeBaseProvider } from "native-base";
-import { MaterialIcons } from "@expo/vector-icons";
+import * as React from "react";
+import { Box, Heading, VStack, FormControl, Input, Button, Center, NativeBaseProvider, Image } from "native-base";
 
-function Example() {
-  return <Center>
-    <Image size={150} borderRadius={20} marginBottom={10} source={require('../NativeBAseLogin/src/imgs/logotipo-do-instagram.png')}
-      alt="Alternate Text" />
-  </Center>;
-}
-
-
-const Examplee = () => {
-  const [show, setShow] = React.useState(false);
-  return <Stack space={4} w="100%" alignItems="center">
-    <Input w={{
-      base: "75%",
-      md: "25%"
-    }} InputLeftElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="muted.400" />} placeholder="Email" />
-    <Input w={{
-      base: "75%",
-      md: "25%"
-    }} type={show ? "text" : "password"} InputRightElement={<Pressable onPress={() => setShow(!show)}>
-      <Icon as={<MaterialIcons name={show ? "visibility" : "visibility-off"} />} size={5} mr="2" color="muted.400" />
-    </Pressable>} placeholder="Password" />
-  </Stack>;
+const Example = () => {
+  return <Center w="100%">
+      <Box safeArea p="2" w="90%" maxW="290" py="8">
+      <Image size={90} borderRadius={20} marginBottom={5} marginLeft={20} source={require('../NativeBAseLogin/src/imgs/logotipo-do-instagram.png')} />
+        <VStack space={3} mt="5">
+          <FormControl>
+            <FormControl.Label>Email</FormControl.Label>
+            <Input borderColor={"black"}/>
+          </FormControl>
+          <FormControl>
+            <FormControl.Label>Senha</FormControl.Label>
+            <Input borderColor={"black"} type="password" />
+          </FormControl>
+          <Button mt="2" colorScheme="indigo">
+            Sign up
+          </Button>
+        </VStack>
+      </Box>
+    </Center>;
 };
 
-const Exampleee = () => {
-return (
-  <View style = {{
-    marginTop: 20
-  }
-  }>
-  <Button
-    title="Press me"
-    onPress={() => Alert.alert('Simple Button pressed')}
-  />
-</View>
-)}
-
-export default () => {
-  return (
-    <NativeBaseProvider >
-      <Center backgroundColor={"#444"} flex={1} px="3">
-        <Example />
-        <Examplee />
-        <Exampleee />
-
-
-      </Center>
-    </NativeBaseProvider>
-  );
-};
+    export default () => {
+        return (
+          <NativeBaseProvider>
+            <Center backgroundColor={"#DCDCDC"} flex={1} px="3">
+                <Example />
+            </Center>
+          </NativeBaseProvider>
+        );
+    };
+    
+    
