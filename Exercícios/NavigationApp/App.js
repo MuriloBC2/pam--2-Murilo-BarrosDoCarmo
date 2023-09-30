@@ -3,31 +3,31 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/home/index';
-import LoginScreen from './src/screens/Login/index';
-import ThirdPage  from './assets/Screens/thirdPage';
+import MembersScreen from './src/screens/tela2/index';
+import ProjectScreen from "./src/screens/tela3/index";
 
 export default function App() {
 const Stack = createNativeStackNavigator()
 
   return (
-    
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = "First" screenOptions={{ headerShown: false}}>
-        <Stack.Screen name = "home" component  = {HomeScreen} />
-        <Stack.Screen name = "login" component  = {LoginScreen}/>
-        <Stack.Screen name = "Third" component  = {ThirdPage}/>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="home"
+          component={HomeScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Members"
+          component={MembersScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Project"
+          component={ProjectScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
-    
   );
 }
-;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
