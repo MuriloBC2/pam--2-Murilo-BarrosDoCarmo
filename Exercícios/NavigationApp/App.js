@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator()
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="home"
+          name="Home"
           component={HomeScreen}
           options={{ headerShown: false }}
         />
