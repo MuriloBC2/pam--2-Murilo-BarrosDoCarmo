@@ -1,3 +1,5 @@
+// Feito em parceria com o Marcelo Henrique 
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';

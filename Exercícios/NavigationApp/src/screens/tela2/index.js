@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { Pressable, StyleSheet, Text, View, Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Pressable, StyleSheet, Text, View, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
-
-export default function  MembersScreen () {
-  const navigation = useNavigation(); 
+export default function MembersScreen() {
+  const navigation = useNavigation();
 
   return (
     <View style={styles.conteiner}>
@@ -141,18 +140,20 @@ const styles = StyleSheet.create({
   },
 
   documentationStyle: {
-    marginTop: 20,
+    marginTop: 120,
     marginBottom: 10,
     marginLeft: 10,
+    alignItems: "center",
   },
   documentationHeader: {
     fontSize: 20,
     marginBottom: 10,
   },
   designStyle: {
-    marginTop: 5,
+    marginTop: 50,
     marginBottom: 10,
     marginLeft: 10,
+    alignItems: "center",
   },
   designStyleHeader: {
     fontSize: 20,
@@ -163,9 +164,10 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   programesStyle: {
-    marginTop: 5,
-    marginBottom: 20,
+    marginTop: 50,
+    marginBottom: 200,
     marginLeft: 10,
+    alignItems: "center",
   },
   programesStyleHeader: {
     fontSize: 20,
@@ -180,8 +182,8 @@ const styles = StyleSheet.create({
   },
   ButtonsArea: {
     flexDirection: "row",
-    justifyContent: 'center',
-    alignItems: 'center,'
+    justifyContent: "center",
+    alignItems: "center,",
   },
   ButtomHome: {
     backgroundColor: "gray",

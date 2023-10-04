@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
 
-
 export default function ProjectScreen() {
   const navigation = useNavigation();
 
@@ -67,10 +66,12 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   projectText: {
-    fontSize: 15,
+    fontSize: 20,
+    marginTop: 120,
   },
   ButtonsArea: {
     flexDirection: "row",
+    marginTop: 120,
   },
   ButtomHome: {
     backgroundColor: "gray",

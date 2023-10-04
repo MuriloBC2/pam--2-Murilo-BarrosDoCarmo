@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image  } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
-
-export default function  HomeScreen () {
-  const navigation = useNavigation(); 
+export default function HomeScreen() {
+  const navigation = useNavigation();
 
   return (
     <View style={styles.Conteiner}>
@@ -14,7 +13,7 @@ export default function  HomeScreen () {
           source={require("../../../assets/auth.png")}
           style={styles.ImageHead}
         />
-        <Text style={styles.TextHead}>Tecnologias e Estudos.</Text>
+        <Text style={styles.TextHead}>Tecnologias e Aprendizados.</Text>
       </View>
 
       <View style={styles.ButtonsArea}>
@@ -33,7 +32,7 @@ export default function  HomeScreen () {
       </View>
     </View>
   );
-} 
+}
 
 const styles = StyleSheet.create({
   Conteiner: {
@@ -57,20 +56,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "black",
   },
-  ButtonsArea:{
-    flexDirection: 'row',
+  ButtonsArea: {
+    flexDirection: "row",
   },
-  ButtomMem:{
-    backgroundColor: 'gray',
-    flexDirection: 'row',
-    padding: 15, 
+  ButtomMem: {
+    backgroundColor: "gray",
+    flexDirection: "row",
+    padding: 15,
     borderRadius: 15,
     marginRight: 10,
   },
-   ButtomPro:{
-    backgroundColor: 'gray',
-    flexDirection: 'row',
-    padding: 15, 
+  ButtomPro: {
+    backgroundColor: "gray",
+    flexDirection: "row",
+    padding: 15,
     borderRadius: 15,
-  }
+  },
 });
