@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "LicaoFirebase",
+    "slug": "LicaoFirebase",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "firebase": { 
+      "apiKey": "<sua-chave-api>", 
+      "authDomain": "<seu-domínio-de-autenticação>", 
+      "databaseURL": "<seu-URL-do-banco-de-dados>",
+      "projectId": "<seu-ID-do-projeto>", 
+      "storageBucket": "<seu-bucket-de-armazenamento>", 
+      "messagingSenderId": "<seu-ID-do-remetente-de-mensagens>" 
+    }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+    
+  }
+  }
