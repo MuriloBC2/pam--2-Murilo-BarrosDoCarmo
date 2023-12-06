@@ -9,15 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff",
-      "firebase": { 
-      "apiKey": "<sua-chave-api>", 
-      "authDomain": "<seu-domínio-de-autenticação>", 
-      "databaseURL": "<seu-URL-do-banco-de-dados>",
-      "projectId": "<seu-ID-do-projeto>", 
-      "storageBucket": "<seu-bucket-de-armazenamento>", 
-      "messagingSenderId": "<seu-ID-do-remetente-de-mensagens>" 
-    }
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
