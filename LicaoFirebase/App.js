@@ -1,12 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { databse } from './src/config/firebase';
+import { database } from './src/config/firebase';
 
 export default function App() {
+  const [contatos, setContatos] = useState([])
+
+  useEffect(()=>{
+    database.collection('contatos').onSnapshot((query)=>{
+      const list = []
+      query.forEach((doc)=>{
+        list.push(doc.data)
+      })
+      setContatos(list)
+    })
+  })
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Cadastro</Text>    </View>
+     {contatos.map((contatos)=>{
+      return <Text key={contatos.numeros}>{contatos.numeros}</Text>
+     }}
+      </View>
   );
 }
 
